@@ -1,3 +1,43 @@
+.bg-blue {
+    background-color: #6fa3ef !important;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.bg-grey {
+    background-color: #fbfdff !important;
+}
+
+.bg-deepgrey {
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+
+.bg-purple {
+    background-color: #bc99c4 !important;
+}
+
+.bg-green {
+    background-color: #46c47c !important;
+}
+
+.bg-yellow {
+    background-color: #f9bb3c !important;
+}
+
+.bg-red {
+    background-color: #e8583d !important;
+}
+
+.bg-orange {
+    background-color: #f68e5f !important;
+}
+
+.bg-orange-red {
+    background-color: #eb3c00 !important;
+}
+
 html,
 body {
     margin: 0;
@@ -187,10 +227,12 @@ margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
     -o-transition: All 1s ease;
     border-radius: 4px;
     margin: 0 20px 15px;
+    opacity: 0.6;
 }
 
 .content-div .textinfo img:hover {
-    opacity: 0.6;
+    opacity: 1.0;
+    transform: scale(1.2);
 }
 
 .content-div .textinfo p {
@@ -201,7 +243,6 @@ margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
 }
 
 .time {
-    background: #eb3c00;
     opacity: 0.8;
     border-radius: 0 0 10px 10px;
     padding: 0 10px;
@@ -216,7 +257,7 @@ margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
     float: right;
 }
 
-.time a {
+.time span {
     margin-left: 10px;
     color: white
 }
