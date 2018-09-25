@@ -4,6 +4,15 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    /*禁止双击选定*/
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #f0f0f0;
 }
 
 /* 顶部 */
@@ -24,7 +33,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 5;
     display: flex;
     justify-content: center;
 }
@@ -59,4 +67,156 @@ body {
     100% {
         -webkit-transform: rotate(360deg);
     }
+}
+
+.nav-div {
+    bottom: 0;
+    width: 70%;
+    height: 40px;
+    position: absolute;
+    margin-bottom: 15px;
+    margin-left: -40px;
+}
+
+.nav-ul {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    display: -webkit-flex;
+}
+
+.nav-li {
+    height: 40px;
+    display: inline;
+    text-align: center;
+    -webkit-flex: 1;
+}
+
+.nav-li a {
+    display: block;
+    color: white;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    text-decoration: none;
+}
+
+/* 背景颜色过渡效果 */
+
+.nav-li a:hover {
+    background: paleturquoise;
+    border-radius: 40px 0;
+    font-size: 18px;
+}
+
+.nav-li .slideDown {
+    position: absolute;
+    display: none;
+    background: paleturquoise;
+    overflow: hidden;
+    width: 18%;
+}
+
+.slideDown ul li {
+    margin: 0 -20px;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.slideDown ul li:hover {
+    background: #272636;
+    font-size: 16px;
+}
+
+.slideDown ul li a {
+    text-decoration: none;
+}
+
+.content-div {
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #999;
+    margin-top: 20px;
+}
+
+.content-div .title {
+    padding: 20px 0 0 20px;
+    font-size: 16px;
+}
+
+.content-div .title a {
+    text-decoration: none;
+    color: #666;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -ms-transition: All 1s ease;
+    -o-transition: All 1s ease;
+}
+
+.content-div .title a:hover {
+    padding-left: 20px;
+    font-size: 18px;
+    color: #222;
+}
+
+.content-div .textinfo {
+    overflow: hidden;
+}
+
+/* 
+margin: 20px;（上、下、左、右各20px。）
+margin: 20px 40px;（上、下20px；左、右40px。）
+margin: 20px 40px 60px;（上20px；左、右40px；下60px。）
+margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
+ */
+.content-div .textinfo img {
+    width: 150px;
+    padding: 4px;
+    float: left;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -ms-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    border-radius: 4px;
+    margin: 0 20px 15px;
+}
+
+.content-div .textinfo img:hover {
+    opacity: 0.6;
+}
+
+.content-div .textinfo p {
+    color: #666;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 20px 20px
+}
+
+.time {
+    background: #eb3c00;
+    opacity: 0.8;
+    border-radius: 0 0 10px 10px;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+    font-size: 13px;
+}
+
+.time div {
+    display: flex;
+    justify-content: center;
+    float: right;
+}
+
+.time a {
+    margin-left: 10px;
+    color: white
 }
