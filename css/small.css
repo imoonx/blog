@@ -66,18 +66,18 @@
 @media screen and (max-width: 620px) {
 
     /* 顶部 */
-    .nav-div {
+    /* .nav-div {
         display: none;
-    }
+    } */
 
     .top-div {
-        height: 70px;
+        height: 110px;
     }
 
-    .top-content {
+    /* .top-content {
         width: 100%;
         height: 70px;
-    }
+    } */
 
     .top-content img {
         width: 60px;
