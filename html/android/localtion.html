@@ -26,12 +26,71 @@
     <!-- favicon图标 -->
     <link rel="shortcut icon" href="https://blog.imoonx.com/img/favicon.ico">
     <title>xuan | 后台定位</title>
-
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/small.css">
 </head>
 
 <body>
 
+    <div class="bg-orange sen-top-div">
+        <div class="sen-top-content">
+            <div class="sen-nav-div">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="../../index.html">首页</a></li>
+                    <li class="nav-li"><a href="javascript:;">学习</a>
+                        <div class="slideDown">
+                            <ul>
+                                <li><a href="../html/java.html">Java</a></li>
+                                <li><a href="../html/android.html">Android</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-li"><a>生活</a></li>
+                    <li class="nav-li"><a href="https://www.imoonx.com/" target="_blank">音乐</a></li>
+                    <li class="nav-li"><a href="../html/video.html">视频</a></li>
+                    <li class="nav-li"><a>问题</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <div class="content-info">
+
+        <span class="title">Android 后台定位，定时上传</span>
+
+        <p>
+            需求：
+            根据后台规定时间段，时间间隔上传位置信息
+        </p>
+        <p>
+            尝试的方法：
+            <br />
+            1.使用极光推送，后台推送消息手机端进行定位获取位置信息上传
+            2.开启服务按照时间间隔上传位置信息
+        </p>
+        <p>
+            缺点：
+            <br />
+            第一种方法：
+            <br />
+            受限于极光后台；当应用未启动时接收不到消息无法进行通信；再次启动时会收到多条消息，发送多条信息
+            <br />
+            第二种方法：
+            <br />
+            受限于用户的启动时间，不能做到准点发送以上两种方法也能做到信息上传，但都不很理想。
+        </p>
+        <p>
+            经过多次尝试，最后动态注册事件变化进行定位获取位置信息首先，监听开机广播，在开机广播中开启定位服务，需要加入开机广播权限，如下：
+            <img src="../../img/localtion_1.png">
+            在定位服务中动态注册时间变化广播：
+            <img src="../../img/localtion_2.png">
+            在BroadcastReceiver中获取当前时间，判断是否在规定范围内，如果在使用百度定位获取当前位置信息上传。
+            <img src="../../img/localtion_3.png">
+        </p>
+    </div>
+
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../js/daohang.js"></script>
 </body>
 
 </html>

@@ -42,6 +42,11 @@
         width: 80%;
     }
 
+    .content-info {
+        width: 90%;
+        padding: 80px 5% 0 5%;
+    }
+
 }
 
 @media screen and (max-width: 920px) {
@@ -105,5 +110,11 @@
     .nav-li .slideDown {
         width: 50%;
     }
+
+/* 内容 */
+.content-info {
+    width: 90%;
+    padding: 80px 5% 0 5%;
+}
 
 }
