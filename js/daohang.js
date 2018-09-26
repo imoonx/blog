@@ -13,7 +13,7 @@ $(function () {
         if (typeof arguments[5] == "number") this.Timer = arguments[5];
         if (typeof arguments[6] == "number") this.DelayTime = arguments[6];
         if (typeof arguments[7] == "number") this.WaitTime = arguments[7];
-        if (typeof arguments[8] == "number") this.ScrollStep = arguments[8]
+        if (typeof arguments[8] == "number") this.ScrollStep = arguments[8];
         this.ID.style.overflow = this.ID.style.overflowX = this.ID.style.overflowY = "hidden";
         this.ID.noWrap = true;
         this.IsNotOpera = (navigator.userAgent.toLowerCase().indexOf("opera") == -1);
@@ -35,22 +35,21 @@ $(function () {
         var timer = this.Timer;
         var delaytime = this.DelayTime;
         var waittime = this.WaitTime;
-        msobj.StartID = function () { msobj.Scroll() }
+        msobj.StartID = function () { msobj.Scroll(); };
         msobj.Continue = function () {
             if (msobj.MouseOver == 1) {
                 setTimeout(msobj.Continue, delaytime);
-            }
-            else {
+            }else {
                 clearInterval(msobj.TimerID);
                 msobj.CTL = msobj.Stop = 0;
                 msobj.TimerID = setInterval(msobj.StartID, timer);
             }
-        }
+        };
         msobj.Pause = function () {
             msobj.Stop = 1;
             clearInterval(msobj.TimerID);
             setTimeout(msobj.Continue, delaytime);
-        }
+        };
         msobj.Begin = function () {
             msobj.ClientScroll = msobj.Direction > 1 ? msobj.ID.scrollWidth : msobj.ID.scrollHeight;
             if ((msobj.Direction <= 1 && msobj.ClientScroll < msobj.Height) || (msobj.Direction > 1 && msobj.ClientScroll < msobj.Width)) return;
@@ -69,12 +68,12 @@ $(function () {
                     msobj.AbsCenter = Math.abs(msobj.HalfWidth - msobj.EventLeft);
                     msobj.Step = Math.round(msobj.AbsCenter * (msobj.BakStep * 2) / msobj.HalfWidth);
                 }
-            }
+            };
             msobj.ID.onmouseover = function () {
                 if (msobj.ScrollStep == 0) return;
                 msobj.MouseOver = 1;
                 clearInterval(msobj.TimerID);
-            }
+            };
             msobj.ID.onmouseout = function () {
                 if (msobj.ScrollStep == 0) {
                     if (msobj.Step == 0) msobj.Step = 1;
@@ -85,10 +84,10 @@ $(function () {
                     clearInterval(msobj.TimerID);
                     msobj.TimerID = setInterval(msobj.StartID, timer);
                 }
-            }
-        }
+            };
+        };
         setTimeout(msobj.Begin, waittime);
-    }
+    };
     srcMarquee.prototype.Scroll = function () {
         switch (this.Direction) {
             case 0:
@@ -140,8 +139,8 @@ $(function () {
                 }
                 break;
         }
-    }
-    new srcMarquee("ScrollMe", 0, 1, 808, 27, 30, 3000, 3000, 27)
+    };
+    new srcMarquee("ScrollMe", 0, 1, 808, 27, 30, 3000, 3000, 27);
 
     var nowimg = 0;
 

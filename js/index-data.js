@@ -23,7 +23,8 @@ var indexList = {
     }, {
         id: 4,
         title: "音乐",
-        href: "https://www.imoonx.com/"
+        href: "https://www.imoonx.com/",
+        target: "_blank"
     }, {
         id: 5,
         title: "视频",
