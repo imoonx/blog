@@ -39,7 +39,7 @@ var indexList = {
         desc: "作为一名初级程序员，自从入行那天开始，一直有写博客的想法，但总是有做不完的事情，工作上的、生活上的；入行两年后终于下定决心写一些自己博客，也许对问题的分析可能不是很到位、充足，也算是自己的一些见解，一点点的进步...",
         time: "2018-09-25",
         img: "img/img_default.jpg",
-        href: "introduction.html",
+        href: "html/introduction.html",
         bgColorClass: "bg-blue",
     }, {
         id: 2,
@@ -47,7 +47,7 @@ var indexList = {
         desc: "Android应用在后台定位，按照规定时间间隔上传服务端；尝试过几种方法，都不是很理想，即使满足要求存储的数据也会很乱，最终使用广播动态监听时间变化上传位置信息...",
         time: "2018-09-26",
         img: "img/localtion_2.png",
-        href: "android/localtion.html",
+        href: "html/android/localtion.html",
         bgColorClass: "bg-green",
     }, ]
 };
