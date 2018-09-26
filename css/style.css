@@ -120,15 +120,14 @@ body {
 
 .nav-ul {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
     color: white;
     font-size: 16px;
     display: -webkit-flex;
 }
 
 .nav-li {
-    height: 40px;
     display: inline;
     text-align: center;
     -webkit-flex: 1;
@@ -146,15 +145,16 @@ body {
 /* 背景颜色过渡效果 */
 
 .nav-li a:hover {
-    background: paleturquoise;
-    border-radius: 40px 0;
+    background: #3F3F3F;
+    /* border-radius: 40px 0; */
     font-size: 18px;
 }
 
 .nav-li .slideDown {
     position: absolute;
     display: none;
-    background: paleturquoise;
+    /* background: paleturquoise; */
+    background: #f68e5f;
     overflow: hidden;
     width: 18%;
     box-shadow: 0px 0px 10px #999;
@@ -171,7 +171,7 @@ body {
 }
 
 .slideDown ul li:hover {
-    background: #eb3c00;
+    /* background: #eb3c00; */
     font-size: 16px;
 }
 
@@ -265,7 +265,7 @@ margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
 
 .sen-top-div {
     width: 100%;
-    height: 40px;
+    height: 60px;
     position: relative;
     box-shadow: 0px 0px 10px #999;
 }
@@ -282,9 +282,9 @@ margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
 .nav-div,
 .sen-nav-div {
     bottom: 0;
-    width: 70%;
-    height: 40px;
+    width: 60%;
+    height: 60px;
     position: absolute;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     margin-left: -40px;
 }
