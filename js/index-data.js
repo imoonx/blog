@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 var indexList = {
     top: [{
         id: 1,
@@ -9,30 +12,34 @@ var indexList = {
         href: "javascript:;",
         item: [{
             id: 1,
-            title: "Java",
-            href: "https://blog.imoonx.com/html/java.html",
+            title: "java",
+            href: "https://blog.imoonx.com/html/public.html?id=1",
         }, {
             id: 2,
-            title: "Android",
-            href: "https://blog.imoonx.com/html/android.html",
+            title: "android",
+            href: "https://blog.imoonx.com/html/public.html?id=2",
+        }, {
+            id: 3,
+            title: "ionic",
+            href: "https://blog.imoonx.com/html/public.html?id=3",
         }],
     }, {
-        id: 3,
-        title: "生活",
-        href: "https://blog.imoonx.com/html/life.html"
-    }, {
         id: 4,
+        title: "生活",
+        href: "https://blog.imoonx.com/html/public.html?id=4"
+    }, {
+        id: 5,
         title: "音乐",
         href: "https://www.imoonx.com/",
         target: "_blank"
     }, {
-        id: 5,
-        title: "视频",
-        href: "https://blog.imoonx.com/html/video.html"
-    }, {
         id: 6,
+        title: "视频",
+        href: "https://blog.imoonx.com/html/public.html?id=5"
+    }, {
+        id: 7,
         title: "书籍",
-        href: "https://blog.imoonx.com/html/book.html"
+        href: "https://blog.imoonx.com/html/public.html?id=6"
     }],
     item: [{
         id: 1,
