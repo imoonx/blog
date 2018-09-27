@@ -6,21 +6,23 @@ $(function () {
     //1 java 2 android 3 ionic 4 生活 6 视频 7 书籍
     for (var i = 0; i < dataList.length; i++) {
         if (id === dataList[i].id) {
-            initData(dataList[i].item);
+            initData(dataList[i]);
         }
     }
+
+    initArgs();
 })
 
 function initData(data) {
     document.title = 'xuan | ' + data.name;
     var html;
-    for (var i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.item.length; i++) {
 
         if (html == undefined)
             html = '<div class="row">';
         else html = html + '<div class="row">';
 
-        var rowDatas = data[i].row;
+        var rowDatas = data.item[i].row;
 
         for (var j = 0; j < rowDatas.length; j++) {
             var rowData = rowDatas[j];
@@ -37,7 +39,6 @@ function initData(data) {
         html = html + '</div>';
     }
     $(".public-content").append(html);
-    initArgs();
 }
 
 function initArgs() {
