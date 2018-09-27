@@ -21,6 +21,7 @@ $(function () {
         }
     }
     topHtml = topHtml + ' </ul></div></div>';
+    console.log(topHtml);
     $('.sen-top-div').append(topHtml);
 
     // 倒序排列
