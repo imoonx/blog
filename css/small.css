@@ -61,6 +61,10 @@
 /* 竖屏手机 */
 @media screen and (max-width: 620px) {
 
+    .content-div {
+        width: 80%;
+    }
+
     .content-div .textinfo {
         overflow: hidden;
         padding: 10px 20px 0;
@@ -82,7 +86,7 @@
         width: 50%;
     }
 
-    /* 内容 */
+    /*详情内容 */
     .content-info {
         width: 90%;
         padding: 80px 5% 0 5%;
