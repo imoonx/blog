@@ -31,7 +31,7 @@
 
     .content-info {
         width: 90%;
-        padding: 80px 5% 0 5%;
+        padding: 80px 5% 5% 5%;
     }
 
     .columns-item .item-desc {
@@ -89,7 +89,6 @@
     /*详情内容 */
     .content-info {
         width: 90%;
-        padding: 80px 5% 0 5%;
     }
 
 }

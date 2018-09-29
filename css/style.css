@@ -230,7 +230,7 @@ margin: 20px 40px 60px 80px;（上20px；右40px；下60px；左80px。）
 .content-info {
     width: 75%;
     margin: 0 auto;
-    padding: 80px 2% 0 2%;
+    padding: 80px 2% 2% 2%;
     background: white;
 }
 
